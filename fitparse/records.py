@@ -353,7 +353,7 @@ BASE_TYPES = {
         name='string',
         identifier=0x07,
         fmt='s',
-        parse=lambda x: x.split('\x00')[0] or None),
+        parse=lambda x: x.split(b'\x00')[0] or None),
     0x88: BaseType(
         name='float32',
         identifier=0x88,
